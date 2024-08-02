@@ -1,7 +1,22 @@
 import './scss/main.scss';
 
-fetch('https://api.nasa.gov/EPIC/api/natural?api_key=YyhXjir0NUcQWUKAMVTYSXxEsnKj8fuYa3KvVXoh')
-.then(res => res.json())
-.then((data) => {
+const url = 'https://api.nasa.gov/EPIC/api/natural/?api_key=';
+const apiKey = 'YyhXjir0NUcQWUKAMVTYSXxEsnKj8fuYa3KvVXoh';
+
+
+fetch(url + apiKey)
+  .then(res => res.json())
+  .then((data) => {
     console.log(data);
-})
+
+    const urlDate = data[0].date.slice(0, 10).split('-').join('/'); //один раз, без цикла
+
+    console.log(urlDate);
+
+    const container = document.querySelector('.container');
+    container.innerHTML = `
+      <img src="https://epic.gsfc.nasa.gov/archive/natural/${urlDate}/png/${data[0].image}.png"/>
+    `;
+
+  })
+
