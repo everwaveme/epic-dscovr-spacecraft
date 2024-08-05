@@ -1,5 +1,5 @@
 .data {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .container {
@@ -8,7 +8,7 @@
 }
 
 .data-list {
-  padding: 35px;
+  padding: 50px;
   list-style: none;
   background-color: $color-semidark;
   border-radius: 10px;
@@ -17,22 +17,27 @@
 
 .data-item {
   display: flex;
+  justify-content: space-between;
 }
 
 .data-pic {
   flex-basis: 50%;
+  align-self: center;
 }
 
-.data-pic-link {
-
-}
+.data-pic-link {}
 
 .data-img {
+  border-radius: 10px;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
+  &:hover {
+    box-shadow: 0 0 20px rgba($color-accent-blue, .5);
+  }
 }
 
 .data-info {
-  flex-basis: 50%;
+  flex-basis: 45%;
 }
 
 .data-info-date {
