@@ -16,3 +16,8 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.container {
+  @include container();
+  // border: 1px solid aqua;
+}

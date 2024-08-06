@@ -1,0 +1,36 @@
+.header {
+  padding: 50px 0;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: $color-light;
+  text-decoration: none;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.header-link {
+  display: block;
+  min-width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .5;
+  }
+}

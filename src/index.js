@@ -26,7 +26,7 @@ fetch(url + apiKey)
           <p class="data-info-date">${outputDate}</p>
           <p class="data-info-desc">
             Это изображение было получено камерой EPIC (Earth Polychromatic Imaging Camera) с борта космического
-              аппарата NOAA DSCOVR агентства NASA.
+            аппарата NOAA DSCOVR агентства NASA.
           </p>
 
           <ul class="data-info-list">
@@ -55,9 +55,11 @@ fetch(url + apiKey)
               <p class="data-info-title">Геоцентрические координаты</p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">широта: </span>
+                ${data[0].centroid_coordinates.lat}
               </p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">долгота: </span>
+                ${data[0].centroid_coordinates.lon}
               </p>
             </li>
 
@@ -65,12 +67,15 @@ fetch(url + apiKey)
               <p class="data-info-title">Позиция аппарата DSCOVR</p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">x: </span>
+                ${data[0].dscovr_j2000_position.x}
               </p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">y: </span>
+                ${data[0].dscovr_j2000_position.y}
               </p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">z: </span>
+                ${data[0].dscovr_j2000_position.z}
               </p>
             </li>
 
@@ -78,12 +83,15 @@ fetch(url + apiKey)
               <p class="data-info-title">Позиция Солнца</p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">x: </span>
+                ${data[0].sun_j2000_position.x}
               </p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">y: </span>
+                ${data[0].sun_j2000_position.y}
               </p>
               <p class="data-info-text">
                 <span class="data-info-text-accent">z: </span>
+                ${data[0].sun_j2000_position.z}
               </p>
             </li>
 

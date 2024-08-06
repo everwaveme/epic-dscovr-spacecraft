@@ -1,10 +1,5 @@
 .data {
-  padding-top: 100px;
-}
-
-.container {
-  @include container();
-  // border: 1px solid aqua;
+  padding-bottom: 50px;
 }
 
 .data-list {
@@ -12,7 +7,6 @@
   list-style: none;
   background-color: $color-semidark;
   border-radius: 10px;
-  // border: 1px solid $color-semidark;
 }
 
 .data-item {
@@ -29,10 +23,10 @@
 
 .data-img {
   border-radius: 10px;
-  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
   &:hover {
-    box-shadow: 0 0 20px rgba($color-accent-blue, .5);
+    box-shadow: 0 0 50px -10px rgba($color-semilight, .5);
   }
 }
 
