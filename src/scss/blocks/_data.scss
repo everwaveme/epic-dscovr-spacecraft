@@ -12,6 +12,7 @@
 .data-item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .data-pic {
@@ -19,11 +20,9 @@
   align-self: center;
 }
 
-.data-pic-link {}
-
 .data-img {
   border-radius: 10px;
-  transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
   &:hover {
     box-shadow: 0 0 50px -10px rgba($color-semilight, .5);
