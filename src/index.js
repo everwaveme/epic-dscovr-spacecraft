@@ -3,15 +3,14 @@ import './scss/main.scss';
 const url = 'https://api.nasa.gov/EPIC/api/natural/?api_key=';
 const apiKey = 'YyhXjir0NUcQWUKAMVTYSXxEsnKj8fuYa3KvVXoh';
 
-//добавить проверку на ошибку и их отлов
-
 fetch(url + apiKey)
-  .then(res =>
-    // if (res.status === 200) {
-    //   return res.json()
-    // }
-    res.json()
-  )
+  .then((res) => {
+    if (res.status === 200) {
+      return res.json();
+    } else {
+      throw new Error('Потеряли связь со спутником... Пожалуйста, обновите страницу &#129402;');
+    }
+  })
   .then((data) => {
 
     //data output
@@ -159,4 +158,10 @@ fetch(url + apiKey)
 
     showSlides(slideIndex);
   })
-.catch()
+.catch((err) => {
+  const list = document.querySelector('.data-list');
+  const slider = document.querySelector('.slider');
+
+  list.innerHTML = `<li class="data-error">${err.message}</li>`;
+  slider.innerHTML = '';
+})
