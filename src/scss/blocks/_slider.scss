@@ -1,12 +1,13 @@
 .slider {
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin: 30px 0;
- padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  padding: 0 50px;
 }
 
-.slider-prev, .slider-next {
+.slider-prev,
+.slider-next {
   cursor: pointer;
   transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
@@ -15,11 +16,13 @@
   }
 }
 
-.slider-prev-arrow, .slider-next-arrow {
+.slider-prev-arrow,
+.slider-next-arrow {
   margin: 10px;
   height: 25px;
 }
 
 .slider-counter {
+  margin: 0 50px;
   font-weight: 600;
 }

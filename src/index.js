@@ -1,4 +1,5 @@
 import './scss/main.scss';
+import './canvas';
 
 const url = 'https://api.nasa.gov/EPIC/api/natural/?api_key=';
 const apiKey = 'YyhXjir0NUcQWUKAMVTYSXxEsnKj8fuYa3KvVXoh';

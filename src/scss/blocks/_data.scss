@@ -5,19 +5,17 @@
 .data-list {
   padding: 50px;
   list-style: none;
-  background-color: $color-semidark;
-  border-radius: 10px;
+  background-color: $color-dark;
+  border-radius: 20px;
+  box-shadow: 0 0 100px -10px rgba($color-accent, .5);
 }
 
 .data-item {
   display: none;
   justify-content: space-between;
-  // margin-bottom: 50px;
-  // opacity: 0;
 
   &.active {
     display: flex;
-    // opacity: 1;
   }
 }
 
@@ -33,12 +31,11 @@
 }
 
 .data-img {
-  border-radius: 10px;
+  border-radius: 20px;
   transition: all .1s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
   &:hover {
-    // box-shadow: 0 0 50px -10px rgba($color-semilight, .5);
-    border: 1px solid $color-accent-blue;
+    border: 1px solid $color-accent;
   }
 }
 
@@ -48,9 +45,9 @@
 
 .data-info-date {
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  color: $color-accent-purple;
+  color: $color-accent;
   text-align: center;
 }
 
@@ -75,7 +72,7 @@
   margin-bottom: 10px;
   font-weight: 900;
   line-height: 21px;
-  color: $color-accent-blue;
+  color: $color-accent;
 }
 
 .data-info-text {
