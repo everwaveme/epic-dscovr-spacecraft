@@ -5,9 +5,10 @@
 .data-list {
   padding: 50px;
   list-style: none;
-  background-color: $color-dark;
+  background: rgba($color-dark, .7);
   border-radius: 20px;
   box-shadow: 0 0 100px -10px rgba($color-accent, .5);
+  border: 1px solid $color-accent;
 }
 
 .data-item {
