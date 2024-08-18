@@ -7,7 +7,7 @@
 
 body {
   font-family: $font;
-  font-size: 14px;
+  font-size: 16px;
   color: $color-light;
   background-color: $color-dark;
 }
@@ -28,5 +28,4 @@ img {
 
 .container {
   @include container();
-  // border: 1px solid aqua;
 }
