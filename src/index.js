@@ -24,7 +24,7 @@ fetch(url + apiKey)
       <li class="data-item">
         <div class="data-pic">
           <a href="https://epic.gsfc.nasa.gov/archive/natural/${urlDate}/png/${data[i].image}.png" class="data-pic-link" target="_blank">
-            <img src="https://epic.gsfc.nasa.gov/archive/natural/${urlDate}/png/${data[i].image}.png" alt="Земля из космоса" class="data-img">
+            <img src="https://epic.gsfc.nasa.gov/archive/natural/${urlDate}/jpg/${data[i].image}.jpg" alt="Земля из космоса" class="data-img">
           </a>
         </div>
 
